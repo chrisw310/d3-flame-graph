@@ -5182,11 +5182,11 @@ var flamegraph = function () {
     }
   }
 
-  function doSortValue (a, b) {
+  function doSort (a, b) {
     if (typeof sort === 'function') {
       return sort(a, b)
     } else if (sort) {
-      return ascending$1(getValue(b), getValue(a))
+      return ascending$1(getName(a), getName(b))
     }
   }
 
@@ -5212,7 +5212,7 @@ var flamegraph = function () {
 
       totalValue = root.value;
 
-      if (sort) root.sort(doSortValue);
+      if (sort) root.sort(doSort);
 
       p(root);
 
