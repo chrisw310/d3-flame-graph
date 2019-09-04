@@ -1,6 +1,11 @@
 .d3-flame-graph rect {
   stroke: #EEEEEE;
+  stroke-width: 0.5;
   fill-opacity: .8;
+}
+
+.container {
+  margin: 0;
 }
 
 .d3-flame-graph rect:hover {
