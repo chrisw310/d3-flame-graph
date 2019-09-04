@@ -81,7 +81,7 @@
     <script type="text/javascript">
     var flameGraph = d3.flamegraph()
       .width(window.screen.width - 50)
-      .cellHeight(50)
+      .cellHeight((window.screen.height - 400) / 8)
       .transitionDuration(150)
       .minFrameSize(0)
       .transitionEase(d3.easeCubic)
@@ -97,13 +97,13 @@
 
 
     // Example on how to use custom tooltips using d3-tip.
-    // var tip = d3.tip()
-    //   .direction("s")
-    //   .offset([8, 0])
-    //   .attr('class', 'd3-flame-graph-tip')
-    //   .html(function(d) { return "name: " + d.data.name + ", value: " + d.data.value; });
+    var tip = d3.tip()
+       .direction("s")
+       .offset([8, 0])
+       .attr('class', 'd3-flame-graph-tip')
+       .html(function(d) { return d.data.name + ", " + parseFloat(d.data.value).toFixed(3) + "%"; });
 
-    // flameGraph.tooltip(tip);
+     flameGraph.tooltip(tip);
 
     var details = document.getElementById("details");
     flameGraph.setDetailsElement(details);

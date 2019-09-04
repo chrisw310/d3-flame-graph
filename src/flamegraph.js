@@ -367,7 +367,8 @@ export default function () {
       g.transition()
         .duration(transitionDuration)
         .ease(transitionEase)
-        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h - y(d.depth) - c)) + ')' })
+        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h + (!getChildren(d) && d.depth !== 8 ? -c * (8 - d.depth) : 0) - y(d.depth) - c)) + ')' })
+        // .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h - y(d.depth) - c)) + ')' })
 
       g.select('rect')
         .transition()
@@ -377,7 +378,7 @@ export default function () {
 
       var node = g.enter()
         .append('svg:g')
-        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h - y(d.depth) - c)) + ')' })
+        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h + (!getChildren(d) && d.depth !== 8 ? -c * (8 - d.depth) : 0) - y(d.depth) - c)) + ')' })
 
       node.append('svg:rect')
         .transition()
@@ -398,9 +399,9 @@ export default function () {
         .attr('class', function (d) { return d.data.fade ? 'frame fade' : 'frame' })
 
       g.select('rect')
-        .attr('height', function (d) { return c })
+        // .attr('height', function (d) { return c })
+        .attr('height', function (d) { return !getChildren(d) && d.depth !== 8 ? c * (9 - d.depth) : c })
         .attr('fill', function (d) { return colorMapper(d) })
-
       if (!tooltip) {
         g.select('title')
           .text(labelHandler)
@@ -409,6 +410,7 @@ export default function () {
       g.select('foreignObject')
         .attr('width', width)
         .attr('height', function (d) { return c })
+        .attr('y', function (d) { return !getChildren(d) && d.depth !== 8 ? c * (8 - d.depth) : 0 })
         .select('div')
         .attr('class', 'd3-flame-graph-label')
         .style('display', function (d) { return (width(d) < 35) ? 'none' : 'block' })
