@@ -1,6 +1,6 @@
 .d3-flame-graph rect {
   stroke: #EEEEEE;
-  stroke-width: 0.5;
+  stroke-width: 0.25;
   fill-opacity: .8;
 }
 

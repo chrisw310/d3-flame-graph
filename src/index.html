@@ -80,10 +80,10 @@
 
     <script type="text/javascript">
     var flameGraph = d3.flamegraph()
-      .width(1800)
-      .cellHeight(38)
-      .transitionDuration(750)
-      .minFrameSize(1)
+      .width(window.screen.width - 50)
+      .cellHeight(50)
+      .transitionDuration(150)
+      .minFrameSize(0)
       .transitionEase(d3.easeCubic)
       .sort(true)
       //Example to sort in reverse order
