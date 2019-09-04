@@ -325,6 +325,14 @@ export default function () {
     }
   }
 
+  function doSortValue (a, b) {
+    if (typeof sort === 'function') {
+      return sort(a, b)
+    } else if (sort) {
+      return ascending(getValue(b), getValue(a))
+    }
+  }
+
   var p = partition()
 
   function filterNodes (root) {
@@ -347,7 +355,7 @@ export default function () {
 
       totalValue = root.value
 
-      if (sort) root.sort(doSort)
+      if (sort) root.sort(doSortValue)
 
       p(root)
 
