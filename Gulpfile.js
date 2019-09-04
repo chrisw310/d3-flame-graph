@@ -51,7 +51,7 @@ gulp.task('style-watch', gulp.series('style', function (done) {
 gulp.task('serve', gulp.series('lint', 'rollup', 'style', function () {
   browserSync.init({
     server: {
-      baseDir: ['examples', 'dist']
+      baseDir: ['src', 'dist']
     }
   })
   gulp.watch('./src/*.js', gulp.series('rollup-watch'))
