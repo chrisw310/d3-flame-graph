@@ -1,6 +1,22 @@
+#labels {
+  position: absolute;
+  top: 165px;
+  left: calc(100vw - 200px);
+  width: 100px;
+}
+
+#labels tr {
+  height: calc(12.5vh - 40px);
+  font-size: 20px;
+}
+
+#labels td {
+  vertical-align: middle;
+}
+
 .d3-flame-graph rect {
   stroke: #EEEEEE;
-  stroke-width: 0.25;
+  stroke-width: 0.4;
   fill-opacity: .8;
 }
 

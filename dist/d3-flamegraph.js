@@ -4891,10 +4891,12 @@ var flamegraph = function () {
   var elided = false;
   var searchSum = 0;
   var totalValue = 0;
-  var maxDelta = 0;
-
   var getName = function (d) {
     return d.data.n || d.data.name
+  };
+
+  var getLeaves = function (d) {
+    return d.data.LEAVES
   };
 
   var getValue = function (d) {
@@ -4965,121 +4967,20 @@ var flamegraph = function () {
   }
 
   var colorMapper = function (d) {
-    return d.highlight ? '#E600E6' : colorHash(getName(d), getLibtype(d), getDelta(d))
+    // return d.highlight ? '#E600E6' : colorHash(getName(d), getLibtype(d), getDelta(d))
+    return d.highlight ? '#E600E6' : colorLeaves(getLeaves(d))
   };
   var originalColorMapper = colorMapper;
 
-  function generateHash (name) {
-    // Return a vector (0.0->1.0) that is a hash of the input string.
-    // The hash is computed to favor early characters over later ones, so
-    // that strings with similar starts have similar vectors. Only the first
-    // 6 characters are considered.
-    const MAX_CHAR = 6;
-
-    var hash = 0;
-    var maxHash = 0;
-    var weight = 1;
-    var mod = 10;
-
-    if (name) {
-      for (var i = 0; i < name.length; i++) {
-        if (i > MAX_CHAR) { break }
-        hash += weight * (name.charCodeAt(i) % mod);
-        maxHash += weight * (mod - 1);
-        weight *= 0.70;
-      }
-      if (maxHash > 0) { hash = hash / maxHash; }
-    }
-    return hash
-  }
-
-  function colorHash (name, libtype, delta) {
-    // Return a color for the given name and library type. The library type
-    // selects the hue, and the name is hashed to a color in that hue.
-
-    var r;
-    var g;
-    var b;
-
-    if (differential) {
-      r = 220;
-      g = 220;
-      b = 220;
-
-      if (!delta) {
-        delta = 0;
-      }
-
-      if (delta > 0) {
-        b = Math.round(210 * (maxDelta - delta) / maxDelta);
-        g = b;
-      } else if (delta < 0) {
-        r = Math.round(210 * (maxDelta + delta) / maxDelta);
-        g = r;
-      }
-    } else {
-      // default when libtype is not in use
-      var hue = elided ? 'cold' : 'warm';
-
-      if (!elided && !(typeof libtype === 'undefined' || libtype === '')) {
-        // Select hue. Order is important.
-        hue = 'red';
-        if (typeof name !== 'undefined' && name && name.match(/::/)) {
-          hue = 'yellow';
-        }
-        if (libtype === 'kernel') {
-          hue = 'orange';
-        } else if (libtype === 'jit') {
-          hue = 'green';
-        } else if (libtype === 'inlined') {
-          hue = 'aqua';
-        }
-      }
-
-      // calculate hash
-      var vector = 0;
-      if (name) {
-        var nameArr = name.split('`');
-        if (nameArr.length > 1) {
-          name = nameArr[nameArr.length - 1]; // drop module name if present
-        }
-        name = name.split('(')[0]; // drop extra info
-        vector = generateHash(name);
-      }
-
-      // calculate color
-      if (hue === 'red') {
-        r = 200 + Math.round(55 * vector);
-        g = 50 + Math.round(80 * vector);
-        b = g;
-      } else if (hue === 'orange') {
-        r = 190 + Math.round(65 * vector);
-        g = 90 + Math.round(65 * vector);
-        b = 0;
-      } else if (hue === 'yellow') {
-        r = 175 + Math.round(55 * vector);
-        g = r;
-        b = 50 + Math.round(20 * vector);
-      } else if (hue === 'green') {
-        r = 50 + Math.round(60 * vector);
-        g = 200 + Math.round(55 * vector);
-        b = r;
-      } else if (hue === 'aqua') {
-        r = 50 + Math.round(60 * vector);
-        g = 165 + Math.round(55 * vector);
-        b = g;
-      } else if (hue === 'cold') {
-        r = 0 + Math.round(55 * (1 - vector));
-        g = 0 + Math.round(230 * (1 - vector));
-        b = 200 + Math.round(55 * vector);
-      } else {
-        // original warm palette
-        r = 200 + Math.round(55 * vector);
-        g = 0 + Math.round(230 * (1 - vector));
-        b = 0 + Math.round(55 * (1 - vector));
-      }
-    }
-
+  function colorLeaves(leaves) {
+    if (leaves == null) return 'rgb(220,220,220)'
+    
+    let vector = 1 - (1 / Math.sqrt(parseFloat(leaves + 1)));
+    
+    let r = 200 + Math.round(50 * vector);
+    let g = 70 + Math.round(175 * (1 - vector));
+    let b = 60 + Math.round(55 * (1 - vector));
+    
     return 'rgb(' + r + ',' + g + ',' + b + ')'
   }
 
@@ -5344,7 +5245,6 @@ var flamegraph = function () {
   }
 
   function adoptNode (node) {
-    maxDelta = 0;
     let id = 0;
     let delta = 0;
     const wantDelta = differential;
@@ -5352,9 +5252,7 @@ var flamegraph = function () {
       n.id = id++;
       if (wantDelta) {
         delta = Math.abs(getDelta(n));
-        if (maxDelta < delta) {
-          maxDelta = delta;
-        }
+        
       }
     });
   }
@@ -5636,6 +5534,12 @@ var flamegraph = function () {
   chart.selfValue = function (_) {
     if (!arguments.length) { return selfValue }
     selfValue = _;
+    return chart
+  };
+
+  chart.getLeaves = function (_) {
+    if (!arguments.length) { return getLeaves }
+    getLeaves = _;
     return chart
   };
 

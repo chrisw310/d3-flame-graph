@@ -32,6 +32,10 @@ export default function () {
     return d.data.n || d.data.name
   }
 
+  var getLeaves = function (d) {
+    return d.data.LEAVES
+  }
+
   var getValue = function (d) {
     if ('v' in d) {
       return d.v
@@ -100,7 +104,8 @@ export default function () {
   }
 
   var colorMapper = function (d) {
-    return d.highlight ? '#E600E6' : colorHash(getName(d), getLibtype(d), getDelta(d))
+    // return d.highlight ? '#E600E6' : colorHash(getName(d), getLibtype(d), getDelta(d))
+    return d.highlight ? '#E600E6' : colorLeaves(getLeaves(d))
   }
   var originalColorMapper = colorMapper
 
@@ -126,6 +131,18 @@ export default function () {
       if (maxHash > 0) { hash = hash / maxHash }
     }
     return hash
+  }
+
+  function colorLeaves(leaves) {
+    if (leaves == null) return 'rgb(220,220,220)'
+    
+    let vector = 1 - (1 / Math.sqrt(parseFloat(leaves + 1)))
+    
+    let r = 200 + Math.round(50 * vector)
+    let g = 70 + Math.round(175 * (1 - vector))
+    let b = 60 + Math.round(55 * (1 - vector))
+    
+    return 'rgb(' + r + ',' + g + ',' + b + ')'
   }
 
   function colorHash (name, libtype, delta) {
@@ -771,6 +788,12 @@ export default function () {
   chart.selfValue = function (_) {
     if (!arguments.length) { return selfValue }
     selfValue = _
+    return chart
+  }
+
+  chart.getLeaves = function (_) {
+    if (!arguments.length) { return getLeaves }
+    getLeaves = _
     return chart
   }
 

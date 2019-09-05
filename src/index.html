@@ -64,6 +64,36 @@
       </div>
       <div id="chart">
       </div>
+      <div id="labels">
+      <table class="table table-bordered">
+  <tbody>
+    <tr>
+      <td>Strain</td>
+    </tr>
+    <tr>
+      <td>Species</td>
+    </tr>
+    <tr>
+    <td>Genus</td>
+    </tr>
+    <tr>
+      <td>Family</td>
+    </tr>
+    <tr>
+      <td>Order</td>
+    </tr>
+    <tr>
+      <td>Class</td>
+    </tr>
+    <tr>
+      <td>Phylum</td>
+    </tr>
+    <tr>
+      <td>Superkingdom</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
       <hr>
       <div id="details">
       </div>
@@ -80,7 +110,7 @@
 
     <script type="text/javascript">
     var flameGraph = d3.flamegraph()
-      .width(window.screen.width - 50)
+      .width(window.screen.width - 250)
       .cellHeight((window.screen.height - 400) / 8)
       .transitionDuration(150)
       .minFrameSize(0)
