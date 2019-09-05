@@ -427,7 +427,7 @@ export default function () {
       g.select('foreignObject')
         .attr('width', width)
         .attr('height', function (d) { return c })
-        .attr('y', function (d) { return c * (8 - d.depth) })
+        .attr('y', function (d) { return c * (8 - d.depth) + c - 20})
         .select('div')
         .attr('class', 'd3-flame-graph-label')
         .style('display', function (d) { return (width(d) < 35) ? 'none' : 'block' })
