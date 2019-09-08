@@ -109,7 +109,7 @@ export default function () {
   }
   var originalColorMapper = colorMapper
 
-  function generateHash (name) {
+  /* function generateHash (name) {
     // Return a vector (0.0->1.0) that is a hash of the input string.
     // The hash is computed to favor early characters over later ones, so
     // that strings with similar starts have similar vectors. Only the first
@@ -131,21 +131,18 @@ export default function () {
       if (maxHash > 0) { hash = hash / maxHash }
     }
     return hash
-  }
+  } */
 
-  function colorLeaves(leaves) {
+  function colorLeaves (leaves) {
     if (leaves == null) return 'rgb(220,220,220)'
-    
     let vector = 1 - (1 / Math.sqrt(parseFloat(leaves + 1)))
-    
     let r = 200 + Math.round(50 * vector)
     let g = 70 + Math.round(175 * (1 - vector))
     let b = 60 + Math.round(55 * (1 - vector))
-    
     return 'rgb(' + r + ',' + g + ',' + b + ')'
   }
 
-  function colorHash (name, libtype, delta) {
+  /* function colorHash (name, libtype, delta) {
     // Return a color for the given name and library type. The library type
     // selects the hue, and the name is hashed to a color in that hue.
 
@@ -233,7 +230,7 @@ export default function () {
     }
 
     return 'rgb(' + r + ',' + g + ',' + b + ')'
-  }
+  } */
 
   function show (d) {
     d.data.fade = false
@@ -427,7 +424,7 @@ export default function () {
       g.select('foreignObject')
         .attr('width', width)
         .attr('height', function (d) { return c })
-        .attr('y', function (d) { return c * (8 - d.depth) + c - 20})
+        .attr('y', function (d) { return c * (8 - d.depth) + c - 20 })
         .select('div')
         .attr('class', 'd3-flame-graph-label')
         .style('display', function (d) { return (width(d) < 35) ? 'none' : 'block' })
