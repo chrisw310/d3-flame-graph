@@ -1,7 +1,7 @@
 {
    "TAXID":0,
    "name":"root",
-   "value":113,
+   "value":100,
    "children":[
       {
          "TAXID":2,
@@ -21,7 +21,225 @@
                "value":3.6771,
                "_CAMI_genomeID":null,
                "_CAMI_OTU":null,
-               "LEAVES":19
+               "LEAVES":19,
+               "children":[
+                  {
+                     "TAXID":1118,
+                     "RANK":"order",
+                     "TAXPATH":"2|1117||1118",
+                     "name":"Chroococcales",
+                     "value":1.3157,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":14,
+                     "children":[
+                        {
+                           "TAXID":1129,
+                           "RANK":"genus",
+                           "TAXPATH":"2|1117||1118||1129",
+                           "name":"Synechococcus",
+                           "value":0.2025,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":2,
+                           "children":[
+                              {
+                                 "TAXID":195250,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1117||1118||1129|195250",
+                                 "name":"Synechococcus sp. PCC 7336",
+                                 "value":0.2025,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":195250.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1117||1118||1129|195250|195250.1",
+                                       "name":"Synechococcus sp. PCC 7336 strain",
+                                       "value":0.2025,
+                                       "_CAMI_genomeID":195250.1,
+                                       "_CAMI_OTU":195250,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":1142,
+                           "RANK":"genus",
+                           "TAXPATH":"2|1117||1118||1142",
+                           "name":"Synechocystis",
+                           "value":1.001,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":4,
+                           "children":[
+                              {
+                                 "TAXID":1148,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1117||1118||1142|1148",
+                                 "name":"Synechocystis sp. PCC 6803",
+                                 "value":0.2811,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":1148.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1117||1118||1142|1148|1148.1",
+                                       "name":"Synechocystis sp. PCC 6803 strain",
+                                       "value":0.2811,
+                                       "_CAMI_genomeID":1148.1,
+                                       "_CAMI_OTU":1148,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              },
+                              {
+                                 "TAXID":927677,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1117||1118||1142|927677",
+                                 "name":"Synechocystis sp. PCC 7509",
+                                 "value":0.7199,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":927677.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1117||1118||1142|927677|927677.1",
+                                       "name":"Synechocystis sp. PCC 7509 strain",
+                                       "value":0.7199,
+                                       "_CAMI_genomeID":927677.1,
+                                       "_CAMI_OTU":927677,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":155977,
+                           "RANK":"genus",
+                           "TAXPATH":"2|1117||1118||155977",
+                           "name":"Acaryochloris",
+                           "value":0.1123,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":2,
+                           "children":[
+                              {
+                                 "TAXID":310037,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1117||1118||155977|310037",
+                                 "name":"Acaryochloris sp. CCMEE 5410",
+                                 "value":0.1123,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":310037.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1117||1118||155977|310037|310037.1",
+                                       "name":"Acaryochloris sp. CCMEE 5410 strain",
+                                       "value":0.1123,
+                                       "_CAMI_genomeID":310037.1,
+                                       "_CAMI_OTU":310037,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":43988,
+                           "RANK":"genus",
+                           "TAXPATH":"2|1117||1118||43988",
+                           "name":"Cyanothece",
+                           "value":0,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":2,
+                           "children":[
+                              {
+                                 "TAXID":391612,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1117||1118||43988|391612",
+                                 "name":"Cyanothece sp. CCY0110",
+                                 "value":0,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":391612.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1117||1118||43988|391612|391612.1",
+                                       "name":"Cyanothece sp. CCY0110 strain",
+                                       "value":0,
+                                       "_CAMI_genomeID":391612.1,
+                                       "_CAMI_OTU":391612,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "TAXID":1189,
+                     "RANK":"order",
+                     "TAXPATH":"2|1117||1189",
+                     "name":"Stigonematales",
+                     "value":2.3614,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":3,
+                     "children":[
+                        {
+                           "TAXID":1190,
+                           "RANK":"genus",
+                           "TAXPATH":"2|1117||1189||1190",
+                           "name":"Fischerella",
+                           "value":2.3614,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":2,
+                           "children":[
+                              {
+                                 "TAXID":372787,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1117||1189||1190|372787",
+                                 "name":"Fischerella thermalis",
+                                 "value":2.3614,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":98439.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1117||1189||1190|372787|98439.1",
+                                       "name":"Fischerella thermalis PCC 7521 strain",
+                                       "value":2.3614,
+                                       "_CAMI_genomeID":98439.1,
+                                       "_CAMI_OTU":372787,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
             },
             {
                "TAXID":1134404,
@@ -2526,8 +2744,96 @@
                                              ]
                                           }
                                        ]
+                                    },
+                                    {
+                                       "TAXID":1224136,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1224|1236|91347|543||1224136",
+                                       "name":"Enterobacteriaceae bacterium LSJC7",
+                                       "value":0.1332,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":1224136.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1224|1236|91347|543||1224136|1224136.1",
+                                             "name":"Enterobacteriaceae bacterium LSJC7 strain",
+                                             "value":0.1332,
+                                             "_CAMI_genomeID":1224136.1,
+                                             "_CAMI_OTU":1224136,
+                                             "LEAVES":0
+                                          }
+                                       ]
                                     }
                                  ]
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":1007115,
+                           "RANK":"species",
+                           "TAXPATH":"2|1224|1236||||1007115",
+                           "name":"gamma proteobacterium SCGC AAA076-D13",
+                           "value":0,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":1,
+                           "children":[
+                              {
+                                 "TAXID":1007115.1,
+                                 "RANK":"strain",
+                                 "TAXPATH":"2|1224|1236||||1007115|1007115.1",
+                                 "name":"gamma proteobacterium SCGC AAA076-D13 strain",
+                                 "value":0,
+                                 "_CAMI_genomeID":1007115.1,
+                                 "_CAMI_OTU":1007115,
+                                 "LEAVES":0
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":247639,
+                           "RANK":"species",
+                           "TAXPATH":"2|1224|1236||||247639",
+                           "name":"marine gamma proteobacterium HTCC2080",
+                           "value":0.0332,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":1,
+                           "children":[
+                              {
+                                 "TAXID":247639.1,
+                                 "RANK":"strain",
+                                 "TAXPATH":"2|1224|1236||||247639|247639.1",
+                                 "name":"marine gamma proteobacterium HTCC2080 strain",
+                                 "value":0.0332,
+                                 "_CAMI_genomeID":247639.1,
+                                 "_CAMI_OTU":247639,
+                                 "LEAVES":0
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":434085,
+                           "RANK":"species",
+                           "TAXPATH":"2|1224|1236||||434085",
+                           "name":"gamma proteobacterium IMCC2047",
+                           "value":0.0243,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":1,
+                           "children":[
+                              {
+                                 "TAXID":434085.1,
+                                 "RANK":"strain",
+                                 "TAXPATH":"2|1224|1236||||434085|434085.1",
+                                 "name":"gamma proteobacterium IMCC2047 strain",
+                                 "value":0.0243,
+                                 "_CAMI_genomeID":434085.1,
+                                 "_CAMI_OTU":434085,
+                                 "LEAVES":0
                               }
                            ]
                         }
@@ -2641,7 +2947,31 @@
                                  "value":1.66,
                                  "_CAMI_genomeID":null,
                                  "_CAMI_OTU":null,
-                                 "LEAVES":2
+                                 "LEAVES":2,
+                                 "children":[
+                                    {
+                                       "TAXID":1054213,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1224|28211|204441|433||1054213",
+                                       "name":"Acetobacteraceae bacterium AT-5844",
+                                       "value":1.66,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":1054213.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1224|28211|204441|433||1054213|1054213.1",
+                                             "name":"Acetobacteraceae bacterium AT-5844 strain",
+                                             "value":1.66,
+                                             "_CAMI_genomeID":1054213.1,
+                                             "_CAMI_OTU":1054213,
+                                             "LEAVES":0
+                                          }
+                                       ]
+                                    }
+                                 ]
                               }
                            ]
                         },
@@ -2808,6 +3138,50 @@
                                                    "LEAVES":0
                                                 }
                                              ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "TAXID":1169855,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1224|28211|204455|31989||1169855",
+                                       "name":"Rhodobacteraceae bacterium PD-2",
+                                       "value":0.028,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":1169855.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1224|28211|204455|31989||1169855|1169855.1",
+                                             "name":"Rhodobacteraceae bacterium PD-2 strain",
+                                             "value":0.028,
+                                             "_CAMI_genomeID":1169855.1,
+                                             "_CAMI_OTU":1169855,
+                                             "LEAVES":0
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "TAXID":467661,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1224|28211|204455|31989||467661",
+                                       "name":"Rhodobacteraceae bacterium KLH11",
+                                       "value":0,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":467661.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1224|28211|204455|31989||467661|467661.1",
+                                             "name":"Rhodobacteraceae bacterium KLH11 strain",
+                                             "value":0,
+                                             "_CAMI_genomeID":467661.1,
+                                             "_CAMI_OTU":467661,
+                                             "LEAVES":0
                                           }
                                        ]
                                     }
@@ -3842,6 +4216,72 @@
                                  ]
                               }
                            ]
+                        },
+                        {
+                           "TAXID":1009708,
+                           "RANK":"species",
+                           "TAXPATH":"2|1224|28211||||1009708",
+                           "name":"alpha proteobacterium SCGC AAA536-G10",
+                           "value":0.0431,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":1,
+                           "children":[
+                              {
+                                 "TAXID":1009708.1,
+                                 "RANK":"strain",
+                                 "TAXPATH":"2|1224|28211||||1009708|1009708.1",
+                                 "name":"alpha proteobacterium SCGC AAA536-G10 strain",
+                                 "value":0.0431,
+                                 "_CAMI_genomeID":1009708.1,
+                                 "_CAMI_OTU":1009708,
+                                 "LEAVES":0
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":1229484,
+                           "RANK":"species",
+                           "TAXPATH":"2|1224|28211||||1229484",
+                           "name":"alpha proteobacterium LLX12A",
+                           "value":0,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":1,
+                           "children":[
+                              {
+                                 "TAXID":1229484.1,
+                                 "RANK":"strain",
+                                 "TAXPATH":"2|1224|28211||||1229484|1229484.1",
+                                 "name":"alpha proteobacterium LLX12A strain",
+                                 "value":0,
+                                 "_CAMI_genomeID":1229484.1,
+                                 "_CAMI_OTU":1229484,
+                                 "LEAVES":0
+                              }
+                           ]
+                        },
+                        {
+                           "TAXID":939301,
+                           "RANK":"species",
+                           "TAXPATH":"2|1224|28211||||939301",
+                           "name":"alpha proteobacterium SCGC AAA015-O19",
+                           "value":0.119,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":1,
+                           "children":[
+                              {
+                                 "TAXID":939301.1,
+                                 "RANK":"strain",
+                                 "TAXPATH":"2|1224|28211||||939301|939301.1",
+                                 "name":"alpha proteobacterium SCGC AAA015-O19 strain",
+                                 "value":0.119,
+                                 "_CAMI_genomeID":939301.1,
+                                 "_CAMI_OTU":939301,
+                                 "LEAVES":0
+                              }
+                           ]
                         }
                      ]
                   },
@@ -4850,6 +5290,40 @@
                                  ]
                               }
                            ]
+                        },
+                        {
+                           "TAXID":327159,
+                           "RANK":"genus",
+                           "TAXPATH":"2|1224|28216|||327159",
+                           "name":"Candidatus Accumulibacter",
+                           "value":0.0624,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":2,
+                           "children":[
+                              {
+                                 "TAXID":327160,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1224|28216|||327159|327160",
+                                 "name":"Candidatus Accumulibacter phosphatis",
+                                 "value":0.0624,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":522306.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1224|28216|||327159|327160|522306.1",
+                                       "name":"Candidatus Accumulibacter phosphatis clade IIA str. UW-1 strain",
+                                       "value":0.0624,
+                                       "_CAMI_genomeID":522306.1,
+                                       "_CAMI_OTU":327160,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              }
+                           ]
                         }
                      ]
                   },
@@ -5444,6 +5918,94 @@
                                              ]
                                           }
                                        ]
+                                    },
+                                    {
+                                       "TAXID":1235799,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1239|186801|186802|186803||1235799",
+                                       "name":"Lachnospiraceae bacterium 3-2",
+                                       "value":0,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":1235799.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1239|186801|186802|186803||1235799|1235799.1",
+                                             "name":"Lachnospiraceae bacterium 3-2 strain",
+                                             "value":0,
+                                             "_CAMI_genomeID":1235799.1,
+                                             "_CAMI_OTU":1235799,
+                                             "LEAVES":0
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "TAXID":652712,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1239|186801|186802|186803||652712",
+                                       "name":"Lachnospiraceae oral taxon 107",
+                                       "value":0.0451,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":575593.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1239|186801|186802|186803||652712|575593.1",
+                                             "name":"Lachnospiraceae oral taxon 107 str. F0167 strain",
+                                             "value":0.0451,
+                                             "_CAMI_genomeID":575593.1,
+                                             "_CAMI_OTU":652712,
+                                             "LEAVES":0
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "TAXID":658085,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1239|186801|186802|186803||658085",
+                                       "name":"Lachnospiraceae bacterium 5_1_57FAA",
+                                       "value":0.2249,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":658085.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1239|186801|186802|186803||658085|658085.1",
+                                             "name":"Lachnospiraceae bacterium 5_1_57FAA strain",
+                                             "value":0.2249,
+                                             "_CAMI_genomeID":658085.1,
+                                             "_CAMI_OTU":658085,
+                                             "LEAVES":0
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "TAXID":742723,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1239|186801|186802|186803||742723",
+                                       "name":"Lachnospiraceae bacterium 2_1_46FAA",
+                                       "value":0.0723,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":742723.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1239|186801|186802|186803||742723|742723.1",
+                                             "name":"Lachnospiraceae bacterium 2_1_46FAA strain",
+                                             "value":0.0723,
+                                             "_CAMI_genomeID":742723.1,
+                                             "_CAMI_OTU":742723,
+                                             "LEAVES":0
+                                          }
+                                       ]
                                     }
                                  ]
                               },
@@ -5970,6 +6532,28 @@
                                        ]
                                     }
                                  ]
+                              },
+                              {
+                                 "TAXID":245012,
+                                 "RANK":"species",
+                                 "TAXPATH":"2|1239|186801|186802|||245012",
+                                 "name":"butyrate-producing bacterium SM4/1",
+                                 "value":0.0696,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":245012.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2|1239|186801|186802|||245012|245012.1",
+                                       "name":"butyrate-producing bacterium SM4/1 strain",
+                                       "value":0.0696,
+                                       "_CAMI_genomeID":245012.1,
+                                       "_CAMI_OTU":245012,
+                                       "LEAVES":0
+                                    }
+                                 ]
                               }
                            ]
                         },
@@ -6140,6 +6724,28 @@
                                                    "LEAVES":0
                                                 }
                                              ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "TAXID":552396,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1239|526524|526525|128827||552396",
+                                       "name":"Erysipelotrichaceae bacterium 5_2_54FAA",
+                                       "value":0.3559,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":552396.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1239|526524|526525|128827||552396|552396.1",
+                                             "name":"Erysipelotrichaceae bacterium 5_2_54FAA strain",
+                                             "value":0.3559,
+                                             "_CAMI_genomeID":552396.1,
+                                             "_CAMI_OTU":552396,
+                                             "LEAVES":0
                                           }
                                        ]
                                     }
@@ -7108,6 +7714,40 @@
                                                    "LEAVES":0
                                                 }
                                              ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "TAXID":33986,
+                                 "RANK":"genus",
+                                 "TAXPATH":"2|1239|91061|1385||33986",
+                                 "name":"Exiguobacterium",
+                                 "value":0.0168,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":2,
+                                 "children":[
+                                    {
+                                       "TAXID":1385984,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|1239|91061|1385||33986|1385984",
+                                       "name":"Exiguobacterium pavilionensis",
+                                       "value":0.0168,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":1345023.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|1239|91061|1385||33986|1385984|1345023.1",
+                                             "name":"Exiguobacterium pavilionensis RW-2 strain",
+                                             "value":0.0168,
+                                             "_CAMI_genomeID":1345023.1,
+                                             "_CAMI_OTU":1385984,
+                                             "LEAVES":0
                                           }
                                        ]
                                     }
@@ -8318,6 +8958,72 @@
                            ]
                         }
                      ]
+                  },
+                  {
+                     "TAXID":1263001,
+                     "RANK":"species",
+                     "TAXPATH":"2|1239|||||1263001",
+                     "name":"Firmicutes bacterium CAG:114",
+                     "value":0.0374,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":1263001.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|1239|||||1263001|1263001.1",
+                           "name":"Firmicutes bacterium CAG:114 strain",
+                           "value":0.0374,
+                           "_CAMI_genomeID":1263001.1,
+                           "_CAMI_OTU":1263001,
+                           "LEAVES":0
+                        }
+                     ]
+                  },
+                  {
+                     "TAXID":1263006,
+                     "RANK":"species",
+                     "TAXPATH":"2|1239|||||1263006",
+                     "name":"Firmicutes bacterium CAG:170",
+                     "value":0.0373,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":1263006.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|1239|||||1263006|1263006.1",
+                           "name":"Firmicutes bacterium CAG:170 strain",
+                           "value":0.0373,
+                           "_CAMI_genomeID":1263006.1,
+                           "_CAMI_OTU":1263006,
+                           "LEAVES":0
+                        }
+                     ]
+                  },
+                  {
+                     "TAXID":1378168,
+                     "RANK":"species",
+                     "TAXPATH":"2|1239|||||1378168",
+                     "name":"Firmicutes bacterium ASF500",
+                     "value":0.0771,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":1378168.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|1239|||||1378168|1378168.1",
+                           "name":"Firmicutes bacterium ASF500 strain",
+                           "value":0.0771,
+                           "_CAMI_genomeID":1378168.1,
+                           "_CAMI_OTU":1378168,
+                           "LEAVES":0
+                        }
+                     ]
                   }
                ]
             },
@@ -8550,6 +9256,50 @@
                                  ]
                               }
                            ]
+                        }
+                     ]
+                  },
+                  {
+                     "TAXID":1131272,
+                     "RANK":"species",
+                     "TAXPATH":"2|200795|||||1131272",
+                     "name":"Chloroflexi bacterium SCGC AB-629-P13",
+                     "value":0.0181,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":1131272.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|200795|||||1131272|1131272.1",
+                           "name":"Chloroflexi bacterium SCGC AB-629-P13 strain",
+                           "value":0.0181,
+                           "_CAMI_genomeID":1131272.1,
+                           "_CAMI_OTU":1131272,
+                           "LEAVES":0
+                        }
+                     ]
+                  },
+                  {
+                     "TAXID":712934,
+                     "RANK":"species",
+                     "TAXPATH":"2|200795|||||712934",
+                     "name":"Chloroflexi bacterium oral taxon 439",
+                     "value":0,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":1311576.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|200795|||||712934|1311576.1",
+                           "name":"Chloroflexi bacterium oral taxon 439 isolate Chl1-2 strain",
+                           "value":0,
+                           "_CAMI_genomeID":1311576.1,
+                           "_CAMI_OTU":712934,
+                           "LEAVES":0
                         }
                      ]
                   }
@@ -10921,7 +11671,31 @@
                "value":0.0899,
                "_CAMI_genomeID":null,
                "_CAMI_OTU":null,
-               "LEAVES":2
+               "LEAVES":2,
+               "children":[
+                  {
+                     "TAXID":700750,
+                     "RANK":"species",
+                     "TAXPATH":"2|265317|||||700750",
+                     "name":"Candidatus Poribacteria sp. WGA-A3",
+                     "value":0.0899,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":700750.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|265317|||||700750|700750.1",
+                           "name":"Candidatus Poribacteria sp. WGA-A3 strain",
+                           "value":0.0899,
+                           "_CAMI_genomeID":700750.1,
+                           "_CAMI_OTU":700750,
+                           "LEAVES":0
+                        }
+                     ]
+                  }
+               ]
             },
             {
                "TAXID":544448,
@@ -11137,7 +11911,53 @@
                "value":1.8867,
                "_CAMI_genomeID":null,
                "_CAMI_OTU":null,
-               "LEAVES":4
+               "LEAVES":4,
+               "children":[
+                  {
+                     "TAXID":1131273,
+                     "RANK":"species",
+                     "TAXPATH":"2|62680|||||1131273",
+                     "name":"Marinimicrobia bacterium SCGC AB-629-J13",
+                     "value":1.2489,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":1131273.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|62680|||||1131273|1131273.1",
+                           "name":"Marinimicrobia bacterium SCGC AB-629-J13 strain",
+                           "value":1.2489,
+                           "_CAMI_genomeID":1131273.1,
+                           "_CAMI_OTU":1131273,
+                           "LEAVES":0
+                        }
+                     ]
+                  },
+                  {
+                     "TAXID":939857,
+                     "RANK":"species",
+                     "TAXPATH":"2|62680|||||939857",
+                     "name":"Marinimicrobia bacterium SCGC AAA298-D23",
+                     "value":0.6379,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":939857.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|62680|||||939857|939857.1",
+                           "name":"Marinimicrobia bacterium SCGC AAA298-D23 strain",
+                           "value":0.6379,
+                           "_CAMI_genomeID":939857.1,
+                           "_CAMI_OTU":939857,
+                           "LEAVES":0
+                        }
+                     ]
+                  }
+               ]
             },
             {
                "TAXID":68297,
@@ -11311,7 +12131,31 @@
                "value":0.02,
                "_CAMI_genomeID":null,
                "_CAMI_OTU":null,
-               "LEAVES":2
+               "LEAVES":2,
+               "children":[
+                  {
+                     "TAXID":1394711,
+                     "RANK":"species",
+                     "TAXPATH":"2|95818|||||1394711",
+                     "name":"Candidatus Saccharibacteria bacterium RAAC3_TM7_1",
+                     "value":0.02,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":1,
+                     "children":[
+                        {
+                           "TAXID":1394711.1,
+                           "RANK":"strain",
+                           "TAXPATH":"2|95818|||||1394711|1394711.1",
+                           "name":"Candidatus Saccharibacteria bacterium RAAC3_TM7_1 strain",
+                           "value":0.02,
+                           "_CAMI_genomeID":1394711.1,
+                           "_CAMI_OTU":1394711,
+                           "LEAVES":0
+                        }
+                     ]
+                  }
+               ]
             },
             {
                "TAXID":976,
@@ -11622,6 +12466,28 @@
                                                    "LEAVES":0
                                                 }
                                              ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "TAXID":1042376,
+                                       "RANK":"species",
+                                       "TAXPATH":"2|976|117743|200644|49546||1042376",
+                                       "name":"Flavobacteriaceae bacterium S85",
+                                       "value":0.1017,
+                                       "_CAMI_genomeID":null,
+                                       "_CAMI_OTU":null,
+                                       "LEAVES":1,
+                                       "children":[
+                                          {
+                                             "TAXID":1042376.1,
+                                             "RANK":"strain",
+                                             "TAXPATH":"2|976|117743|200644|49546||1042376|1042376.1",
+                                             "name":"Flavobacteriaceae bacterium S85 strain",
+                                             "value":0.1017,
+                                             "_CAMI_genomeID":1042376.1,
+                                             "_CAMI_OTU":1042376,
+                                             "LEAVES":0
                                           }
                                        ]
                                     }
@@ -13047,7 +13913,31 @@
                            "value":0.0318,
                            "_CAMI_genomeID":null,
                            "_CAMI_OTU":null,
-                           "LEAVES":2
+                           "LEAVES":2,
+                           "children":[
+                              {
+                                 "TAXID":667138,
+                                 "RANK":"species",
+                                 "TAXPATH":"2157|28890|183967|2301|||667138",
+                                 "name":"Thermoplasmatales archaeon I-plasma",
+                                 "value":0.0318,
+                                 "_CAMI_genomeID":null,
+                                 "_CAMI_OTU":null,
+                                 "LEAVES":1,
+                                 "children":[
+                                    {
+                                       "TAXID":667138.1,
+                                       "RANK":"strain",
+                                       "TAXPATH":"2157|28890|183967|2301|||667138|667138.1",
+                                       "name":"Thermoplasmatales archaeon I-plasma strain",
+                                       "value":0.0318,
+                                       "_CAMI_genomeID":667138.1,
+                                       "_CAMI_OTU":667138,
+                                       "LEAVES":0
+                                    }
+                                 ]
+                              }
+                           ]
                         }
                      ]
                   },
@@ -13224,938 +14114,64 @@
                            ]
                         }
                      ]
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":1118,
-         "RANK":"order",
-         "TAXPATH":"2|1117||1118",
-         "name":"Chroococcales",
-         "value":1.3157,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":14
-      },
-      {
-         "TAXID":1189,
-         "RANK":"order",
-         "TAXPATH":"2|1117||1189",
-         "name":"Stigonematales",
-         "value":2.3614,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":3
-      },
-      {
-         "TAXID":1129,
-         "RANK":"genus",
-         "TAXPATH":"2|1117||1118||1129",
-         "name":"Synechococcus",
-         "value":0.2025,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":2,
-         "children":[
-            {
-               "TAXID":195250,
-               "RANK":"species",
-               "TAXPATH":"2|1117||1118||1129|195250",
-               "name":"Synechococcus sp. PCC 7336",
-               "value":0.2025,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
+                  },
                   {
-                     "TAXID":195250.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1117||1118||1129|195250|195250.1",
-                     "name":"Synechococcus sp. PCC 7336 strain",
-                     "value":0.2025,
-                     "_CAMI_genomeID":195250.1,
-                     "_CAMI_OTU":195250,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":1142,
-         "RANK":"genus",
-         "TAXPATH":"2|1117||1118||1142",
-         "name":"Synechocystis",
-         "value":1.001,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":4,
-         "children":[
-            {
-               "TAXID":1148,
-               "RANK":"species",
-               "TAXPATH":"2|1117||1118||1142|1148",
-               "name":"Synechocystis sp. PCC 6803",
-               "value":0.2811,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":1148.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1117||1118||1142|1148|1148.1",
-                     "name":"Synechocystis sp. PCC 6803 strain",
-                     "value":0.2811,
-                     "_CAMI_genomeID":1148.1,
-                     "_CAMI_OTU":1148,
-                     "LEAVES":0
+                     "TAXID":379546,
+                     "RANK":"genus",
+                     "TAXPATH":"2157|28890||||379546",
+                     "name":"Aciduliprofundum",
+                     "value":0.0187,
+                     "_CAMI_genomeID":null,
+                     "_CAMI_OTU":null,
+                     "LEAVES":2,
+                     "children":[
+                        {
+                           "TAXID":673860,
+                           "RANK":"species",
+                           "TAXPATH":"2157|28890||||379546|673860",
+                           "name":"Aciduliprofundum sp. MAR08-339",
+                           "value":0.0187,
+                           "_CAMI_genomeID":null,
+                           "_CAMI_OTU":null,
+                           "LEAVES":1,
+                           "children":[
+                              {
+                                 "TAXID":673860.1,
+                                 "RANK":"strain",
+                                 "TAXPATH":"2157|28890||||379546|673860|673860.1",
+                                 "name":"Aciduliprofundum sp. MAR08-339 strain",
+                                 "value":0.0187,
+                                 "_CAMI_genomeID":673860.1,
+                                 "_CAMI_OTU":673860,
+                                 "LEAVES":0
+                              }
+                           ]
+                        }
+                     ]
                   }
                ]
             },
             {
-               "TAXID":927677,
+               "TAXID":1412874,
                "RANK":"species",
-               "TAXPATH":"2|1117||1118||1142|927677",
-               "name":"Synechocystis sp. PCC 7509",
-               "value":0.7199,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":927677.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1117||1118||1142|927677|927677.1",
-                     "name":"Synechocystis sp. PCC 7509 strain",
-                     "value":0.7199,
-                     "_CAMI_genomeID":927677.1,
-                     "_CAMI_OTU":927677,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":1190,
-         "RANK":"genus",
-         "TAXPATH":"2|1117||1189||1190",
-         "name":"Fischerella",
-         "value":2.3614,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":2,
-         "children":[
-            {
-               "TAXID":372787,
-               "RANK":"species",
-               "TAXPATH":"2|1117||1189||1190|372787",
-               "name":"Fischerella thermalis",
-               "value":2.3614,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":98439.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1117||1189||1190|372787|98439.1",
-                     "name":"Fischerella thermalis PCC 7521 strain",
-                     "value":2.3614,
-                     "_CAMI_genomeID":98439.1,
-                     "_CAMI_OTU":372787,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":155977,
-         "RANK":"genus",
-         "TAXPATH":"2|1117||1118||155977",
-         "name":"Acaryochloris",
-         "value":0.1123,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":2,
-         "children":[
-            {
-               "TAXID":310037,
-               "RANK":"species",
-               "TAXPATH":"2|1117||1118||155977|310037",
-               "name":"Acaryochloris sp. CCMEE 5410",
-               "value":0.1123,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":310037.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1117||1118||155977|310037|310037.1",
-                     "name":"Acaryochloris sp. CCMEE 5410 strain",
-                     "value":0.1123,
-                     "_CAMI_genomeID":310037.1,
-                     "_CAMI_OTU":310037,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":327159,
-         "RANK":"genus",
-         "TAXPATH":"2|1224|28216|||327159",
-         "name":"Candidatus Accumulibacter",
-         "value":0.0624,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":2,
-         "children":[
-            {
-               "TAXID":327160,
-               "RANK":"species",
-               "TAXPATH":"2|1224|28216|||327159|327160",
-               "name":"Candidatus Accumulibacter phosphatis",
-               "value":0.0624,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":522306.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1224|28216|||327159|327160|522306.1",
-                     "name":"Candidatus Accumulibacter phosphatis clade IIA str. UW-1 strain",
-                     "value":0.0624,
-                     "_CAMI_genomeID":522306.1,
-                     "_CAMI_OTU":327160,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":33986,
-         "RANK":"genus",
-         "TAXPATH":"2|1239|91061|1385||33986",
-         "name":"Exiguobacterium",
-         "value":0.0168,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":2,
-         "children":[
-            {
-               "TAXID":1385984,
-               "RANK":"species",
-               "TAXPATH":"2|1239|91061|1385||33986|1385984",
-               "name":"Exiguobacterium pavilionensis",
-               "value":0.0168,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":1345023.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1239|91061|1385||33986|1385984|1345023.1",
-                     "name":"Exiguobacterium pavilionensis RW-2 strain",
-                     "value":0.0168,
-                     "_CAMI_genomeID":1345023.1,
-                     "_CAMI_OTU":1385984,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":379546,
-         "RANK":"genus",
-         "TAXPATH":"2157|28890||||379546",
-         "name":"Aciduliprofundum",
-         "value":0.0187,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":2,
-         "children":[
-            {
-               "TAXID":673860,
-               "RANK":"species",
-               "TAXPATH":"2157|28890||||379546|673860",
-               "name":"Aciduliprofundum sp. MAR08-339",
-               "value":0.0187,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":673860.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2157|28890||||379546|673860|673860.1",
-                     "name":"Aciduliprofundum sp. MAR08-339 strain",
-                     "value":0.0187,
-                     "_CAMI_genomeID":673860.1,
-                     "_CAMI_OTU":673860,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":43988,
-         "RANK":"genus",
-         "TAXPATH":"2|1117||1118||43988",
-         "name":"Cyanothece",
-         "value":0,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":2,
-         "children":[
-            {
-               "TAXID":391612,
-               "RANK":"species",
-               "TAXPATH":"2|1117||1118||43988|391612",
-               "name":"Cyanothece sp. CCY0110",
-               "value":0,
-               "_CAMI_genomeID":null,
-               "_CAMI_OTU":null,
-               "LEAVES":1,
-               "children":[
-                  {
-                     "TAXID":391612.1,
-                     "RANK":"strain",
-                     "TAXPATH":"2|1117||1118||43988|391612|391612.1",
-                     "name":"Cyanothece sp. CCY0110 strain",
-                     "value":0,
-                     "_CAMI_genomeID":391612.1,
-                     "_CAMI_OTU":391612,
-                     "LEAVES":0
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "TAXID":1007115,
-         "RANK":"species",
-         "TAXPATH":"2|1224|1236||||1007115",
-         "name":"gamma proteobacterium SCGC AAA076-D13",
-         "value":0,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1007115.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|1236||||1007115|1007115.1",
-               "name":"gamma proteobacterium SCGC AAA076-D13 strain",
-               "value":0,
-               "_CAMI_genomeID":1007115.1,
-               "_CAMI_OTU":1007115,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1009708,
-         "RANK":"species",
-         "TAXPATH":"2|1224|28211||||1009708",
-         "name":"alpha proteobacterium SCGC AAA536-G10",
-         "value":0.0431,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1009708.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|28211||||1009708|1009708.1",
-               "name":"alpha proteobacterium SCGC AAA536-G10 strain",
-               "value":0.0431,
-               "_CAMI_genomeID":1009708.1,
-               "_CAMI_OTU":1009708,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1042376,
-         "RANK":"species",
-         "TAXPATH":"2|976|117743|200644|49546||1042376",
-         "name":"Flavobacteriaceae bacterium S85",
-         "value":0.1017,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1042376.1,
-               "RANK":"strain",
-               "TAXPATH":"2|976|117743|200644|49546||1042376|1042376.1",
-               "name":"Flavobacteriaceae bacterium S85 strain",
-               "value":0.1017,
-               "_CAMI_genomeID":1042376.1,
-               "_CAMI_OTU":1042376,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1054213,
-         "RANK":"species",
-         "TAXPATH":"2|1224|28211|204441|433||1054213",
-         "name":"Acetobacteraceae bacterium AT-5844",
-         "value":1.66,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1054213.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|28211|204441|433||1054213|1054213.1",
-               "name":"Acetobacteraceae bacterium AT-5844 strain",
-               "value":1.66,
-               "_CAMI_genomeID":1054213.1,
-               "_CAMI_OTU":1054213,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1131272,
-         "RANK":"species",
-         "TAXPATH":"2|200795|||||1131272",
-         "name":"Chloroflexi bacterium SCGC AB-629-P13",
-         "value":0.0181,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1131272.1,
-               "RANK":"strain",
-               "TAXPATH":"2|200795|||||1131272|1131272.1",
-               "name":"Chloroflexi bacterium SCGC AB-629-P13 strain",
-               "value":0.0181,
-               "_CAMI_genomeID":1131272.1,
-               "_CAMI_OTU":1131272,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1131273,
-         "RANK":"species",
-         "TAXPATH":"2|62680|||||1131273",
-         "name":"Marinimicrobia bacterium SCGC AB-629-J13",
-         "value":1.2489,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1131273.1,
-               "RANK":"strain",
-               "TAXPATH":"2|62680|||||1131273|1131273.1",
-               "name":"Marinimicrobia bacterium SCGC AB-629-J13 strain",
-               "value":1.2489,
-               "_CAMI_genomeID":1131273.1,
-               "_CAMI_OTU":1131273,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1169855,
-         "RANK":"species",
-         "TAXPATH":"2|1224|28211|204455|31989||1169855",
-         "name":"Rhodobacteraceae bacterium PD-2",
-         "value":0.028,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1169855.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|28211|204455|31989||1169855|1169855.1",
-               "name":"Rhodobacteraceae bacterium PD-2 strain",
-               "value":0.028,
-               "_CAMI_genomeID":1169855.1,
-               "_CAMI_OTU":1169855,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1224136,
-         "RANK":"species",
-         "TAXPATH":"2|1224|1236|91347|543||1224136",
-         "name":"Enterobacteriaceae bacterium LSJC7",
-         "value":0.1332,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1224136.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|1236|91347|543||1224136|1224136.1",
-               "name":"Enterobacteriaceae bacterium LSJC7 strain",
-               "value":0.1332,
-               "_CAMI_genomeID":1224136.1,
-               "_CAMI_OTU":1224136,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1229484,
-         "RANK":"species",
-         "TAXPATH":"2|1224|28211||||1229484",
-         "name":"alpha proteobacterium LLX12A",
-         "value":0,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1229484.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|28211||||1229484|1229484.1",
-               "name":"alpha proteobacterium LLX12A strain",
-               "value":0,
-               "_CAMI_genomeID":1229484.1,
-               "_CAMI_OTU":1229484,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1235799,
-         "RANK":"species",
-         "TAXPATH":"2|1239|186801|186802|186803||1235799",
-         "name":"Lachnospiraceae bacterium 3-2",
-         "value":0,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1235799.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|186801|186802|186803||1235799|1235799.1",
-               "name":"Lachnospiraceae bacterium 3-2 strain",
-               "value":0,
-               "_CAMI_genomeID":1235799.1,
-               "_CAMI_OTU":1235799,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1263001,
-         "RANK":"species",
-         "TAXPATH":"2|1239|||||1263001",
-         "name":"Firmicutes bacterium CAG:114",
-         "value":0.0374,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1263001.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|||||1263001|1263001.1",
-               "name":"Firmicutes bacterium CAG:114 strain",
-               "value":0.0374,
-               "_CAMI_genomeID":1263001.1,
-               "_CAMI_OTU":1263001,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1263006,
-         "RANK":"species",
-         "TAXPATH":"2|1239|||||1263006",
-         "name":"Firmicutes bacterium CAG:170",
-         "value":0.0373,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1263006.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|||||1263006|1263006.1",
-               "name":"Firmicutes bacterium CAG:170 strain",
-               "value":0.0373,
-               "_CAMI_genomeID":1263006.1,
-               "_CAMI_OTU":1263006,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1378168,
-         "RANK":"species",
-         "TAXPATH":"2|1239|||||1378168",
-         "name":"Firmicutes bacterium ASF500",
-         "value":0.0771,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1378168.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|||||1378168|1378168.1",
-               "name":"Firmicutes bacterium ASF500 strain",
-               "value":0.0771,
-               "_CAMI_genomeID":1378168.1,
-               "_CAMI_OTU":1378168,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1394711,
-         "RANK":"species",
-         "TAXPATH":"2|95818|||||1394711",
-         "name":"Candidatus Saccharibacteria bacterium RAAC3_TM7_1",
-         "value":0.02,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1394711.1,
-               "RANK":"strain",
-               "TAXPATH":"2|95818|||||1394711|1394711.1",
-               "name":"Candidatus Saccharibacteria bacterium RAAC3_TM7_1 strain",
-               "value":0.02,
-               "_CAMI_genomeID":1394711.1,
-               "_CAMI_OTU":1394711,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":1412874,
-         "RANK":"species",
-         "TAXPATH":"2157||||||1412874",
-         "name":"uncultured archaeon A07HR60",
-         "value":0.1605,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1412874.1,
-               "RANK":"strain",
-               "TAXPATH":"2157||||||1412874|1412874.1",
-               "name":"uncultured archaeon A07HR60 strain",
+               "TAXPATH":"2157||||||1412874",
+               "name":"uncultured archaeon A07HR60",
                "value":0.1605,
-               "_CAMI_genomeID":1412874.1,
-               "_CAMI_OTU":1412874,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":245012,
-         "RANK":"species",
-         "TAXPATH":"2|1239|186801|186802|||245012",
-         "name":"butyrate-producing bacterium SM4/1",
-         "value":0.0696,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":245012.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|186801|186802|||245012|245012.1",
-               "name":"butyrate-producing bacterium SM4/1 strain",
-               "value":0.0696,
-               "_CAMI_genomeID":245012.1,
-               "_CAMI_OTU":245012,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":247639,
-         "RANK":"species",
-         "TAXPATH":"2|1224|1236||||247639",
-         "name":"marine gamma proteobacterium HTCC2080",
-         "value":0.0332,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":247639.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|1236||||247639|247639.1",
-               "name":"marine gamma proteobacterium HTCC2080 strain",
-               "value":0.0332,
-               "_CAMI_genomeID":247639.1,
-               "_CAMI_OTU":247639,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":434085,
-         "RANK":"species",
-         "TAXPATH":"2|1224|1236||||434085",
-         "name":"gamma proteobacterium IMCC2047",
-         "value":0.0243,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":434085.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|1236||||434085|434085.1",
-               "name":"gamma proteobacterium IMCC2047 strain",
-               "value":0.0243,
-               "_CAMI_genomeID":434085.1,
-               "_CAMI_OTU":434085,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":467661,
-         "RANK":"species",
-         "TAXPATH":"2|1224|28211|204455|31989||467661",
-         "name":"Rhodobacteraceae bacterium KLH11",
-         "value":0,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":467661.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|28211|204455|31989||467661|467661.1",
-               "name":"Rhodobacteraceae bacterium KLH11 strain",
-               "value":0,
-               "_CAMI_genomeID":467661.1,
-               "_CAMI_OTU":467661,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":552396,
-         "RANK":"species",
-         "TAXPATH":"2|1239|526524|526525|128827||552396",
-         "name":"Erysipelotrichaceae bacterium 5_2_54FAA",
-         "value":0.3559,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":552396.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|526524|526525|128827||552396|552396.1",
-               "name":"Erysipelotrichaceae bacterium 5_2_54FAA strain",
-               "value":0.3559,
-               "_CAMI_genomeID":552396.1,
-               "_CAMI_OTU":552396,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":652712,
-         "RANK":"species",
-         "TAXPATH":"2|1239|186801|186802|186803||652712",
-         "name":"Lachnospiraceae oral taxon 107",
-         "value":0.0451,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":575593.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|186801|186802|186803||652712|575593.1",
-               "name":"Lachnospiraceae oral taxon 107 str. F0167 strain",
-               "value":0.0451,
-               "_CAMI_genomeID":575593.1,
-               "_CAMI_OTU":652712,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":658085,
-         "RANK":"species",
-         "TAXPATH":"2|1239|186801|186802|186803||658085",
-         "name":"Lachnospiraceae bacterium 5_1_57FAA",
-         "value":0.2249,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":658085.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|186801|186802|186803||658085|658085.1",
-               "name":"Lachnospiraceae bacterium 5_1_57FAA strain",
-               "value":0.2249,
-               "_CAMI_genomeID":658085.1,
-               "_CAMI_OTU":658085,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":667138,
-         "RANK":"species",
-         "TAXPATH":"2157|28890|183967|2301|||667138",
-         "name":"Thermoplasmatales archaeon I-plasma",
-         "value":0.0318,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":667138.1,
-               "RANK":"strain",
-               "TAXPATH":"2157|28890|183967|2301|||667138|667138.1",
-               "name":"Thermoplasmatales archaeon I-plasma strain",
-               "value":0.0318,
-               "_CAMI_genomeID":667138.1,
-               "_CAMI_OTU":667138,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":700750,
-         "RANK":"species",
-         "TAXPATH":"2|265317|||||700750",
-         "name":"Candidatus Poribacteria sp. WGA-A3",
-         "value":0.0899,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":700750.1,
-               "RANK":"strain",
-               "TAXPATH":"2|265317|||||700750|700750.1",
-               "name":"Candidatus Poribacteria sp. WGA-A3 strain",
-               "value":0.0899,
-               "_CAMI_genomeID":700750.1,
-               "_CAMI_OTU":700750,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":712934,
-         "RANK":"species",
-         "TAXPATH":"2|200795|||||712934",
-         "name":"Chloroflexi bacterium oral taxon 439",
-         "value":0,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":1311576.1,
-               "RANK":"strain",
-               "TAXPATH":"2|200795|||||712934|1311576.1",
-               "name":"Chloroflexi bacterium oral taxon 439 isolate Chl1-2 strain",
-               "value":0,
-               "_CAMI_genomeID":1311576.1,
-               "_CAMI_OTU":712934,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":742723,
-         "RANK":"species",
-         "TAXPATH":"2|1239|186801|186802|186803||742723",
-         "name":"Lachnospiraceae bacterium 2_1_46FAA",
-         "value":0.0723,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":742723.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1239|186801|186802|186803||742723|742723.1",
-               "name":"Lachnospiraceae bacterium 2_1_46FAA strain",
-               "value":0.0723,
-               "_CAMI_genomeID":742723.1,
-               "_CAMI_OTU":742723,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":939301,
-         "RANK":"species",
-         "TAXPATH":"2|1224|28211||||939301",
-         "name":"alpha proteobacterium SCGC AAA015-O19",
-         "value":0.119,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":939301.1,
-               "RANK":"strain",
-               "TAXPATH":"2|1224|28211||||939301|939301.1",
-               "name":"alpha proteobacterium SCGC AAA015-O19 strain",
-               "value":0.119,
-               "_CAMI_genomeID":939301.1,
-               "_CAMI_OTU":939301,
-               "LEAVES":0
-            }
-         ]
-      },
-      {
-         "TAXID":939857,
-         "RANK":"species",
-         "TAXPATH":"2|62680|||||939857",
-         "name":"Marinimicrobia bacterium SCGC AAA298-D23",
-         "value":0.6379,
-         "_CAMI_genomeID":null,
-         "_CAMI_OTU":null,
-         "LEAVES":1,
-         "children":[
-            {
-               "TAXID":939857.1,
-               "RANK":"strain",
-               "TAXPATH":"2|62680|||||939857|939857.1",
-               "name":"Marinimicrobia bacterium SCGC AAA298-D23 strain",
-               "value":0.6379,
-               "_CAMI_genomeID":939857.1,
-               "_CAMI_OTU":939857,
-               "LEAVES":0
+               "_CAMI_genomeID":null,
+               "_CAMI_OTU":null,
+               "LEAVES":1,
+               "children":[
+                  {
+                     "TAXID":1412874.1,
+                     "RANK":"strain",
+                     "TAXPATH":"2157||||||1412874|1412874.1",
+                     "name":"uncultured archaeon A07HR60 strain",
+                     "value":0.1605,
+                     "_CAMI_genomeID":1412874.1,
+                     "_CAMI_OTU":1412874,
+                     "LEAVES":0
+                  }
+               ]
             }
          ]
       }
