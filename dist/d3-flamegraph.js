@@ -5215,6 +5215,29 @@ var flamegraph = function () {
     return nodeList
   }
 
+  function decodedDepth (node) {
+    switch (node.data.RANK) {
+      case 'superkingdom':
+        return 1
+      case 'phylum':
+        return 2
+      case 'class':
+        return 3
+      case 'order':
+        return 4
+      case 'family':
+        return 5
+      case 'genus':
+        return 6
+      case 'species':
+        return 7
+      case 'strain':
+        return 8
+      default:
+        return 0
+    }
+  }
+
   function update () {
     selection.each(function (root) {
       var x = linear().range([0, w]);
@@ -5244,8 +5267,8 @@ var flamegraph = function () {
       g.transition()
         .duration(transitionDuration)
         .ease(transitionEase)
-        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h + -c * (8 - d.depth) - y(d.depth) - c)) + ')' });
-        // .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h - y(d.depth) - c)) + ')' })
+        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h + -c * (8 - decodedDepth(d)) - y(decodedDepth(d)) - c)) + ')' });
+        // .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h - y(decodedDepth(d)) - c)) + ')' })
 
       g.select('rect')
         .transition()
@@ -5255,7 +5278,7 @@ var flamegraph = function () {
 
       var node = g.enter()
         .append('svg:g')
-        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(d.depth) : (h + -c * (8 - d.depth) - y(d.depth) - c)) + ')' });
+        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h + -c * (8 - decodedDepth(d)) - y(decodedDepth(d)) - c)) + ')' });
 
       node.append('svg:rect')
         .transition()
@@ -5277,7 +5300,7 @@ var flamegraph = function () {
 
       g.select('rect')
         // .attr('height', function (d) { return c })
-        .attr('height', function (d) { return c * (9 - d.depth) })
+        .attr('height', function (d) { return c * (9 - decodedDepth(d)) })
         .attr('fill', function (d) { return colorMapper(d) });
       if (!tooltip) {
         g.select('title')
@@ -5287,7 +5310,7 @@ var flamegraph = function () {
       g.select('foreignObject')
         .attr('width', width)
         .attr('height', function (d) { return c })
-        .attr('y', function (d) { return c * (8 - d.depth) + c - 20 })
+        .attr('y', function (d) { return c * (8 - decodedDepth(d)) + c - 20 })
         .select('div')
         .attr('class', 'd3-flame-graph-label')
         .style('display', function (d) { return (width(d) < 35) ? 'none' : 'block' })
