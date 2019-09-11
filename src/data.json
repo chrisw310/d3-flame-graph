@@ -6047,7 +6047,7 @@
                                                    "value":0.1134,
                                                    "_CAMI_genomeID":1035196.1,
                                                    "_CAMI_OTU":1261,
-                                                   "LEAVES":1
+                                                   "LEAVES":0
                                                 },
                                                 {
                                                    "TAXID":1035196.2,
@@ -6057,7 +6057,7 @@
                                                    "value":0.0767,
                                                    "_CAMI_genomeID":1122950.1,
                                                    "_CAMI_OTU":1261,
-                                                   "LEAVES":1
+                                                   "LEAVES":0
                                                 }
                                              ]
                                           }
