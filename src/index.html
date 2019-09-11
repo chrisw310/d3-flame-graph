@@ -23,6 +23,7 @@
           <div class="pull-right">
             <form class="form-inline" id="form">
               <a class="btn" href="javascript: resetZoom();">Reset zoom</a>
+              <a class="btn" href="javascript: toggleScale();">Scale Toggle</a>
               <a class="btn" href="javascript: clear();">Clear</a>
               <div class="form-group">
                 <input type="text" class="form-control" id="term">
@@ -161,6 +162,10 @@
 
     function resetZoom() {
       flameGraph.resetZoom();
+    }
+
+    function toggleScale() {
+      flameGraph.toggleScale();
     }
 
     function onClick(d) {

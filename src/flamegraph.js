@@ -27,6 +27,7 @@ export default function () {
   var searchSum = 0
   var totalValue = 0
   var maxDelta = 0
+  var valueScale = false
 
   var getName = function (d) {
     return d.data.n || d.data.name
@@ -105,7 +106,16 @@ export default function () {
 
   var colorMapper = function (d) {
     // return d.highlight ? '#E600E6' : colorHash(getName(d), getLibtype(d), getDelta(d))
-    return d.highlight ? '#E600E6' : colorLeaves(getLeaves(d))
+    if (d.highlight) {
+      return '#E600E6'
+    } else if (valueScale) {
+      if (d.data.name === 'root') return colorLeaves(null)
+      return colorLeaves(getValue(d) * 3)
+    } else {
+      return colorLeaves(getLeaves(d))
+    }
+    // return d.highlight ? '#E600E6' : valueScale ? colorLeaves(getValue(d) * 1.5) : colorLeaves(getLeaves(d))
+    // return d.highlight ? '#E600E6' : colorLeaves(getValue(d) * 1.5)
   }
   var originalColorMapper = colorMapper
 
@@ -756,6 +766,11 @@ export default function () {
     selection.each(function (data) {
       zoom(data) // zoom to root
     })
+  }
+
+  chart.toggleScale = function () {
+    valueScale = !valueScale
+    update()
   }
 
   chart.onClick = function (_) {
