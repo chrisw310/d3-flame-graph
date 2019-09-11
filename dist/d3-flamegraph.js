@@ -4998,10 +4998,10 @@ var flamegraph = function () {
 
   function colorLeaves (leaves) {
     if (leaves == null) return 'rgb(220,220,220)'
-    let vector = 1 - (1 / Math.sqrt(parseFloat(leaves + 1)));
-    let r = 200 + Math.round(50 * vector);
-    let g = 70 + Math.round(175 * (1 - vector));
-    let b = 60 + Math.round(55 * (1 - vector));
+    let vector = 1 - (1 / Math.cbrt(leaves + 1));
+    let r = 150 + Math.round(100 * vector);
+    let g = 120 + Math.round(105 * (1 - vector));
+    let b = 70 + Math.round(165 * (1 - vector));
     return 'rgb(' + r + ',' + g + ',' + b + ')'
   }
 
