@@ -436,7 +436,6 @@ export default function () {
         .attr('class', function (d) { return d.data.fade ? 'frame fade' : 'frame' })
 
       g.select('rect')
-        // .attr('height', function (d) { return c })
         .attr('height', function (d) { return c * (9 - decodedDepth(d)) })
         .attr('fill', function (d) { return colorMapper(d) })
       if (!tooltip) {
@@ -447,9 +446,10 @@ export default function () {
       g.select('foreignObject')
         .attr('width', width)
         .attr('height', function (d) { return c })
-        .attr('y', function (d) { return c * (8 - decodedDepth(d)) + c - 20 })
+        .attr('y', function (d) { return c * (7 - decodedDepth(d)) + c })
         .select('div')
         .attr('class', 'd3-flame-graph-label')
+        .attr('transform', function (d) { return 'translate(0,20)' })
         .style('display', function (d) { return (width(d) < 35) ? 'none' : 'block' })
         .transition()
         .delay(transitionDuration)
