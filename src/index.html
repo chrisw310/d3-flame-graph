@@ -84,19 +84,18 @@
     var flameGraph = d3.flamegraph()
       .width(window.screen.width - 250)
       .cellHeight((window.screen.height - 400) / 8)
-      .transitionDuration(150)
-      .minFrameSize(0)
+      .transitionDuration(500)
+      .minFrameSize(3)
       .transitionEase(d3.easeCubic)
       .sort(true)
       .sort(function(a,b){ return d3.descending(a.value, b.value);})
-      .title("")
+      .title("Toy CAMI - High Complexity")
       .onClick(onClick)
       .differential(false)
       .elided(false)
       .selfValue(false)
       .setColorMapper((d, originalColor) =>
         d.highlight ? "#6aff8f" : originalColor);
-
 
     // Example on how to use custom tooltips using d3-tip.
     var tip = d3.tip()
@@ -110,24 +109,12 @@
     var details = document.getElementById("details");
     flameGraph.setDetailsElement(details);
 
-    // Example on how to use searchById() function in flamegraph.
-    // To invoke this function after loading the graph itself, this function should be registered in d3 datum(data).call()
-    // (See d3.json invocation in this file)
     function invokeFind() {
       var searchId = parseInt(location.hash.substring(1), 10);
       if (searchId) {
         find(searchId);
       }
     }
-
-    // Example on how to use custom labels
-    // var label = function(d) {
-    //  return "name: " + d.name + ", value: " + d.value;
-    // }
-    // flameGraph.label(label);
-
-    // Example of how to set fixed chart height
-    // flameGraph.height(540);
 
     d3.json("data.json", function(error, data) {
       if (error) return console.warn(error);
@@ -172,6 +159,13 @@
       console.info(`Clicked on ${d.data.name}, id: "${d.id}"`);
       history.pushState({ id: d.id }, d.data.name, `#${d.id}`);
     }
+
+    // auto adjust label
+    setTimeout( function() {
+    let chartHeight = document.querySelector('#chart svg').getAttribute('height')
+    let labels = document.querySelectorAll('#labels tr')
+    for (var e of labels) { e.style.height = (chartHeight/10.0) + 'px' }
+    }, 500)
     </script>
   </body>
 </html>

@@ -5278,7 +5278,7 @@ var flamegraph = function () {
       g.transition()
         .duration(transitionDuration)
         .ease(transitionEase)
-        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h + -c * (8 - decodedDepth(d)) - y(decodedDepth(d)) - c)) + ')' });
+        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h - (c - 100) + -c * (8 - decodedDepth(d)) - y(decodedDepth(d)) - c)) + ')' });
         // .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h - y(decodedDepth(d)) - c)) + ')' })
 
       g.select('rect')
@@ -5289,7 +5289,7 @@ var flamegraph = function () {
 
       var node = g.enter()
         .append('svg:g')
-        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h + -c * (8 - decodedDepth(d)) - y(decodedDepth(d)) - c)) + ')' });
+        .attr('transform', function (d) { return 'translate(' + x(d.x0) + ',' + (inverted ? y(decodedDepth(d)) : (h - (c - 100) + -c * (8 - decodedDepth(d)) - y(decodedDepth(d)) - c)) + ')' });
 
       node.append('svg:rect')
         .transition()
@@ -5502,7 +5502,7 @@ var flamegraph = function () {
         svg.append('svg:text')
           .attr('class', 'title')
           .attr('text-anchor', 'middle')
-          .attr('y', '25')
+          .attr('y', '45')
           .attr('x', w / 2)
           .attr('fill', '#808080')
           .text(title);
