@@ -119,14 +119,28 @@
 
     d3.json("data.json", function(error, data) {
       if (error) return console.warn(error);
+      
+      // frame
+      var svg = d3.select("#chart")
+      .append("svg")
+      .attr("width", "1920")
+      .attr("height", "1080")
+      .call(d3.zoom().on("zoom", function () {
+              svg.attr("transform", d3.event.transform)
+              console.log(d3.event)
+      }))
+      .append("g")
 
-      d3.select("#chart")
+      // chart
+      d3.select("#chart g")
           .datum(data)
           .call(flameGraph)
           .call(invokeFind);
-    let chartHeight = document.querySelector('#chart svg').getAttribute('height')
-    let labels = document.querySelectorAll('#labels tr')
-    for (var e of labels) { e.style.height = (chartHeight/10.0) + 'px' }
+
+      // auto adjust label
+      let chartHeight = document.querySelector('#chart svg').getAttribute('height')
+      let labels = document.querySelectorAll('#labels tr')
+      for (var e of labels) { e.style.height = (chartHeight/10.0) + 'px' }
     });
 
     document.getElementById("form").addEventListener("submit", function(event){
