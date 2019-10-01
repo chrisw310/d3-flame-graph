@@ -26,7 +26,7 @@
               <a class="btn" href="javascript: toggleScale();">Scale Toggle</a>
               <a class="btn" href="javascript: clear();">Clear</a>
               <div class="form-group">
-                <input type="text" class="form-control" id="term">
+                <input type="text" class="form-control" oninput="search();" id="term">
               </div>
               <a class="btn btn-primary" href="javascript: search();">Search</a>
             </form>
@@ -127,7 +127,6 @@
       .attr("height", "1080")
       .call(d3.zoom().on("zoom", function () {
               svg.attr("transform", d3.event.transform)
-              console.log(d3.event)
       }))
       .append("g")
 
