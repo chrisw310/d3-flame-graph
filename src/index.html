@@ -119,6 +119,7 @@
 
     d3.json("data.json", function(error, data) {
       if (error) return console.warn(error);
+<<<<<<< HEAD
       
       // frame
       var svg = d3.select("#chart")
@@ -132,14 +133,16 @@
 
       // chart
       d3.select("#chart g")
+=======
+
+      d3.select("#chart")
+>>>>>>> parent of 6200c11... crude zooming
           .datum(data)
           .call(flameGraph)
           .call(invokeFind);
-
-      // auto adjust label
-      let chartHeight = document.querySelector('#chart svg').getAttribute('height')
-      let labels = document.querySelectorAll('#labels tr')
-      for (var e of labels) { e.style.height = (chartHeight/10.0) + 'px' }
+    let chartHeight = document.querySelector('#chart svg').getAttribute('height')
+    let labels = document.querySelectorAll('#labels tr')
+    for (var e of labels) { e.style.height = (chartHeight/10.0) + 'px' }
     });
 
     document.getElementById("form").addEventListener("submit", function(event){
