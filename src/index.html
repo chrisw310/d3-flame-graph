@@ -119,24 +119,7 @@
 
     d3.json("data.json", function(error, data) {
       if (error) return console.warn(error);
-<<<<<<< HEAD
-      
-      // frame
-      var svg = d3.select("#chart")
-      .append("svg")
-      .attr("width", "1920")
-      .attr("height", "1080")
-      .call(d3.zoom().on("zoom", function () {
-              svg.attr("transform", d3.event.transform)
-      }))
-      .append("g")
-
-      // chart
-      d3.select("#chart g")
-=======
-
       d3.select("#chart")
->>>>>>> parent of 6200c11... crude zooming
           .datum(data)
           .call(flameGraph)
           .call(invokeFind);
